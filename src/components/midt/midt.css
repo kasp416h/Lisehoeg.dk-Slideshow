@@ -1,0 +1,135 @@
+.Midt {
+    background-color: rgb(241, 241, 241);
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-antal {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px 0 0 0;
+    color: rgb(87, 87, 87);
+}
+
+.container-flex-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 2%;
+}
+
+
+.container-slideshow {
+    position: relative;
+    overflow: hidden;
+    width: 75%;
+    padding-top: 31.3%;
+}
+
+.container-slideshow .container-slideshow-images {
+    position: absolute;
+    width: fit-content;
+    height: 100%;
+    top: 0;
+    left: calc((((100% / 3 * 5) / 100 * 2 * 3) - (100% / 3 * 5) + 3.232px) / 5 - (((100% / 3 * 5) / 100 * 2) - 1.616px));
+    display: flex;
+}
+
+.container-slideshow-images .billede {
+    height: 100%;
+    margin-right: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ 
+}
+
+.container-slideshow-images .billede img {
+  height: 100%;
+
+}   
+
+.container-slideshow-images .billede:last-child {
+    margin-right: 0;
+}
+
+.container-slideshow-images .middle img {
+    /* transform: scale(1.06); */
+    opacity: 1;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+.container-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.4rem;
+    padding: 20px 0 20px 0;
+}
+
+.container-flex-row button {
+    height: 80px;
+    align-self: center;
+}
+
+.dots {
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    background-color: rgb(165, 165, 165);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.active,
+.dots:hover {
+  background-color: rgb(112, 112, 112);
+}
+.container-flex-row button:hover {
+  background-color: rgb(232, 232, 232);
+}
+
+#tilfoj {
+    position: absolute;
+    margin: -50px auto auto auto;
+}
+
+.slideshow-knap {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 40px 10px 0;
+}
+
+#slet {
+    background: none;
+    border: none;
+    top: 69.5em;
+    position: absolute;
+    opacity: 70%;
+    transition: 0.3s;
+    right: 38%;
+}
+
+#slet:hover {
+    transition: 0.3s;
+    opacity: 100%;
+}
+
+.adminhidden {
+    display: none
+}
+
+
+@media screen and (max-width: 550px) {
+    .Midt {
+        display: none;
+    }
+}
+@media screen and (min-width: 551px) and ( max-width: 1024px) {
+}
+
+@media screen and (min-width: 551px) and ( max-width: 768px) {
+}
